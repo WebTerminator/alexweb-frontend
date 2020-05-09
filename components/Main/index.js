@@ -31,7 +31,7 @@ const Main = (props) => {
 }
 
 Main.propTypes = {
-  projects: PropTypes.array.isRequired
+  projects: PropTypes.object.isRequired
 }
 
 export default Main
