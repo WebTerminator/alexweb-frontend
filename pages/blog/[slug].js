@@ -2,22 +2,20 @@ import { useRouter } from 'next/router'
 import Layout from '../../components/Layout'
 import ArticleShare from '../../components/ArticleShare'
 import Article from '../../components/Article'
-import { getArticleBySlug } from '../../api'
+import { getBio, getArticleBySlug } from '../../api'
 import { getAllPostIds, getPostData } from './index'
 
 
-const BlogArticle = (props) => {
+const BlogArticle = props => {
   const {
+    article,
     bio,
-    pageProps: {
-      article,
-      query: { slug }
-    }
+    query: { slug }
   } = props
 
   const currentArticle = article[0]
   return (
-    <Layout bio={bio}>
+    <Layout bio={bio.bio}>
       <Article title={currentArticle.title} content={currentArticle.content} />
       <ArticleShare url={`${process.env.API_URL}/blog/${slug}`} />
     </Layout>
@@ -26,7 +24,8 @@ const BlogArticle = (props) => {
 
 BlogArticle.getInitialProps = async ({ query }) => {
   const article = await getArticleBySlug(query.slug)
-  return { article, query }
+  const bio = await getBio()
+  return { article, bio, query }
 }
 
 export default BlogArticle

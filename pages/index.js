@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Main from '../components/Main'
-import { getProjects } from '../api'
+import { getBio, getProjects } from '../api'
 
 const Home = props => {
-    const { bio, pageProps: { projects } } = props
+    const { bio, projects } = props
 
     return (
-        <Layout bio={bio}>
+        <Layout bio={bio.bio}>
             <Main projects={projects} />
         </Layout>
     )
@@ -15,7 +15,8 @@ const Home = props => {
 
 Home.getInitialProps = async () => {
     const projects = await getProjects()
-    return { projects }
+    const bio = await getBio()
+    return { bio, projects }
 }
 
 export default Home
