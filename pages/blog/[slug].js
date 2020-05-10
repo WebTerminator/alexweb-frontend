@@ -1,12 +1,9 @@
-import { useRouter } from 'next/router'
 import Layout from '../../components/Layout'
 import ArticleShare from '../../components/ArticleShare'
 import Article from '../../components/Article'
 import { getArticleBySlug } from '../../api'
-import { getAllPostIds, getPostData } from './index'
 
-
-const BlogArticle = (props) => {
+const BlogArticle = props => {
   const {
     bio,
     pageProps: {
@@ -26,6 +23,7 @@ const BlogArticle = (props) => {
 
 BlogArticle.getInitialProps = async ({ query }) => {
   const article = await getArticleBySlug(query.slug)
+  console.log(article, query)
   return { article, query }
 }
 
