@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import PropTypes from 'prop-types'
+import React from "react";
+import Link from "next/link";
+import PropTypes from "prop-types";
 import {
   ArtcilePreview,
   Img,
@@ -8,17 +8,17 @@ import {
   PublishedDate,
   TextWrapper,
   Title,
-  Wrapper
-} from './style'
+  Wrapper,
+} from "./style";
 
 const Card = ({ data }) => {
-  const BASE_URL = process.env.API_URL
+  const BASE_URL = process.env.API_URL_PROD;
   const {
     intro,
     preview: { url },
     slug,
-    title
-  } = data
+    title,
+  } = data;
 
   return (
     <Link href="/blog/[slug]" as={`/blog/${slug}`}>
@@ -32,18 +32,18 @@ const Card = ({ data }) => {
         </TextWrapper>
       </Wrapper>
     </Link>
-  )
-}
+  );
+};
 
 Card.propTypes = {
   data: PropTypes.shape({
     intro: PropTypes.string,
     preview: PropTypes.shape({
-      url: PropTypes.string
+      url: PropTypes.string,
     }),
     slug: PropTypes.string,
-    title: PropTypes.string
-  }).isRequired
-}
+    title: PropTypes.string,
+  }).isRequired,
+};
 
-export default Card
+export default Card;
