@@ -2,6 +2,7 @@ import Layout from "../../components/Layout";
 import ArticleShare from "../../components/ArticleShare";
 import Article from "../../components/Article";
 import { getArticleBySlug } from "../../api";
+import { BASE_URL } from "../../api";
 
 const BlogArticle = (props) => {
   const {
@@ -16,7 +17,7 @@ const BlogArticle = (props) => {
   return (
     <Layout bio={bio}>
       <Article title={currentArticle.title} content={currentArticle.content} />
-      <ArticleShare url={`${process.env.API_URL}/blog/${slug}`} />
+      <ArticleShare url={`${BASE_URL}/blog/${slug}`} />
     </Layout>
   );
 };
