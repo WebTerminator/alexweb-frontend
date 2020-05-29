@@ -3,13 +3,16 @@ import { getData } from "../utils";
 const development = process.env.NODE_ENV !== "production";
 const DEV_URL = process.env.API_URL;
 const PROD_URL = process.env.API_URL_PROD;
-export const BASE_URL = development ? DEV_URL : PROD_URL;
+export const BASE_API_URL = development ? DEV_URL : PROD_URL;
+export const FE_URL = development
+  ? `http://localhost:3000/`
+  : `https://alexweb-frontend.now.sh/`;
 
 const endpoints = {
-  bio: `${BASE_URL}/bio`,
-  article: `${BASE_URL}/articles?slug=`,
-  articles: `${BASE_URL}/articles`,
-  projects: `${BASE_URL}/projects`,
+  bio: `${BASE_API_URL}/bio`,
+  article: `${BASE_API_URL}/articles?slug=`,
+  articles: `${BASE_API_URL}/articles`,
+  projects: `${BASE_API_URL}/projects`,
 };
 
 export const uploads = {

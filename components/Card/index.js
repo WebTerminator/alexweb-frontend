@@ -10,7 +10,7 @@ import {
   Title,
   Wrapper,
 } from "./style";
-import { BASE_URL } from "../../api";
+import { BASE_API_URL } from "../../api";
 
 const Card = ({ data }) => {
   const {
@@ -24,7 +24,7 @@ const Card = ({ data }) => {
     <Link href="/blog/[slug]" as={`/blog/${slug}`}>
       <Wrapper>
         <ImgWrapper>
-          <Img src={`${BASE_URL}${url}`} />
+          <Img src={`${BASE_API_URL}${url}`} />
         </ImgWrapper>
         <TextWrapper>
           <Title>{title}</Title>
