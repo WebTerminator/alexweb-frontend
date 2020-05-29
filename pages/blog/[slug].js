@@ -23,7 +23,6 @@ const BlogArticle = (props) => {
 
 BlogArticle.getInitialProps = async ({ query }) => {
   const article = await getArticleBySlug(query.slug);
-  console.log(article, query);
   return { article, query };
 };
 

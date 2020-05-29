@@ -1,7 +1,9 @@
 import { getData } from "../utils";
 
-const DEV_URL = `https://strapi-api-portfolio.herokuapp.com`;
-const BASE_URL = DEV_URL;
+const development = process.env.NODE_ENV !== "production";
+const DEV_URL = process.env.API_URL;
+const PROD_URL = process.env.API_URL_PROD;
+export const BASE_URL = development ? DEV_URL : PROD_URL;
 
 const endpoints = {
   bio: `${BASE_URL}/bio`,
@@ -11,7 +13,7 @@ const endpoints = {
 };
 
 export const uploads = {
-  cv: `${BASE_URL}/uploads/CV_487e065e20.pdf`,
+  cv: `https://strapi-api-portfolio.herokuapp.com/uploads/CV_c07b60209f.pdf`,
 };
 
 export const getBio = () => getData(endpoints.bio);
