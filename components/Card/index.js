@@ -10,7 +10,6 @@ import {
   Title,
   Wrapper,
 } from "./style";
-import { BASE_API_URL } from "../../api";
 
 const Card = ({ data }) => {
   const {
