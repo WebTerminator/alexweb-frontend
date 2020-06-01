@@ -24,7 +24,7 @@ const Card = ({ data }) => {
     <Link href="/blog/[slug]" as={`/blog/${slug}`}>
       <Wrapper>
         <ImgWrapper>
-          <Img src={`${BASE_API_URL}${url}`} />
+          <Img src={url} />
         </ImgWrapper>
         <TextWrapper>
           <Title>{title}</Title>

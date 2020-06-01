@@ -16,7 +16,7 @@ const endpoints = {
 };
 
 export const uploads = {
-  cv: `https://strapi-api-portfolio.herokuapp.com/uploads/CV_c07b60209f.pdf`,
+  cv: `${BASE_API_URL}/uploads/CV_ada5dd0981.pdf`,
 };
 
 export const getBio = () => getData(endpoints.bio);
