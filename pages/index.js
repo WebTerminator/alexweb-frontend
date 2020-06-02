@@ -19,7 +19,8 @@ const Home = (props) => {
             "This is the company website where the user will discover AlexWeb latest work and news",
           images: [
             {
-              url: "/facebook.png",
+              url:
+                "https://res.cloudinary.com/ltbzulwym/image/upload/v1591101650/facebook_2c545fac50.png",
               width: 1200,
               height: 1200,
               alt: "AlexWeb LTD logo",
