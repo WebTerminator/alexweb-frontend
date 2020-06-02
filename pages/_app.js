@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "next/head";
 import { getBio } from "../api";
 import "../assets/css/style.css";
+import { useAnalytics } from "../util/ga";
 
 const App = ({ Component, pageProps, bio }) => {
+  const { init, trackPageViewed } = useAnalytics();
   const props = {
     ...bio,
     pageProps,
   };
+  useEffect(() => {
+    init("UA-27666071-1");
+    trackPageViewed();
+  }, []);
 
   return (
     <>
@@ -19,21 +25,6 @@ const App = ({ Component, pageProps, bio }) => {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap"
           rel="stylesheet"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              
-              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27666071-1"></script>
-              <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'UA-27666071-1');
-              </script>
-
-              `,
-          }}
         />
       </Head>
       <Component {...props} />
