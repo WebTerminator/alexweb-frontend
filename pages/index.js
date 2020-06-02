@@ -17,7 +17,14 @@ const Home = (props) => {
           title: "Home page",
           description:
             "This is the company website where the user will discover AlexWeb latest work and news",
-          image: "/facebook.png",
+          images: [
+            {
+              url: "/facebook.png",
+              width: 1200,
+              height: 1200,
+              alt: "AlexWeb LTD logo",
+            },
+          ],
         }}
       />
       <Layout bio={bio}>
