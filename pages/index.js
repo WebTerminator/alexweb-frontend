@@ -31,8 +31,7 @@ const Home = (props) => {
         twitter={{
           handle: "@AsWeb85",
           cardType: "summary",
-          title: "title",
-          description: "test",
+          site: "@AsWeb85",
         }}
       />
       <Layout bio={bio}>
