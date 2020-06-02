@@ -16,7 +16,7 @@ const endpoints = {
 };
 
 export const uploads = {
-  cv: `${BASE_API_URL}/uploads/CV_ada5dd0981.pdf`,
+  cv: `https://res.cloudinary.com/ltbzulwym/image/upload/v1591036268/CV_b7118848c8.pdf`,
 };
 
 export const getBio = () => getData(endpoints.bio);
