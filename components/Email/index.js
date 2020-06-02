@@ -1,6 +1,7 @@
 import React from "react";
 import EmailSVG from "../Icons/email";
 import { EmailLink, TriangleCSS } from "./style";
+import { useAnalytics } from "../../util/ga";
 
 const Email = () => {
   const { trackEvent } = useAnalytics();
