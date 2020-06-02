@@ -17,6 +17,7 @@ const Home = (props) => {
           title: "Home page",
           description:
             "This is the company website where the user will discover AlexWeb latest work and news",
+          image: "/facebook.png",
         }}
       />
       <Layout bio={bio}>
