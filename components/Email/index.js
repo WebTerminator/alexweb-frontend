@@ -1,13 +1,24 @@
-import React from 'react'
-import EmailSVG from '../Icons/email'
-import { EmailLink, TriangleCSS } from './style'
+import React from "react";
+import EmailSVG from "../Icons/email";
+import { EmailLink, TriangleCSS } from "./style";
 
-const Email = () =>
-  <>
-    <TriangleCSS />
-    <EmailLink href="mailto:aw@alex-web.co.uk">
-      <EmailSVG />
-    </EmailLink>
-  </>
+const Email = () => {
+  const { trackEvent } = useAnalytics();
 
-export default Email
+  const handleGaTracking = () =>
+    trackEvent({
+      action: "Email sent",
+      category: "Contact",
+    });
+
+  return (
+    <>
+      <TriangleCSS />
+      <EmailLink onClick={handleGaTracking} href="mailto:aw@alex-web.co.uk">
+        <EmailSVG />
+      </EmailLink>
+    </>
+  );
+};
+
+export default Email;
