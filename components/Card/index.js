@@ -10,11 +10,13 @@ import {
   Title,
   Wrapper,
 } from "./style";
+import { formatDate } from "../../util/dateFormat";
 
 const Card = ({ data }) => {
   const {
     intro,
     preview: { url },
+    published,
     slug,
     title,
   } = data;
@@ -28,6 +30,10 @@ const Card = ({ data }) => {
         <TextWrapper>
           <Title>{title}</Title>
           <ArtcilePreview>{intro}</ArtcilePreview>
+          <PublishedDate>
+            <span>Published on:</span>
+            <span>{formatDate(published)}</span>
+          </PublishedDate>
         </TextWrapper>
       </Wrapper>
     </Link>
@@ -40,6 +46,7 @@ Card.propTypes = {
     preview: PropTypes.shape({
       url: PropTypes.string,
     }),
+    published: PropTypes.string,
     slug: PropTypes.string,
     title: PropTypes.string,
   }).isRequired,

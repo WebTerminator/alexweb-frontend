@@ -24,9 +24,15 @@ export const Title = styled.h3`
   font-weight: 800;
 `;
 
-export const PublishedDate = styled.span`
+export const PublishedDate = styled.p`
   font-size: 0.9rem;
-  display: block;
+
+  span {
+    &:nth-child(2) {
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
 `;
 
 export const ArtcilePreview = styled.p`
