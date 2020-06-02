@@ -29,10 +29,8 @@ const Home = (props) => {
           ],
         }}
         twitter={{
-          title: "Home page of AlexWeb LTD",
-          url:
-            "https://res.cloudinary.com/ltbzulwym/image/upload/v1591108794/profile_picture_cfc2454d7d.png",
           handle: "@AsWeb85",
+          cardType: "summary_large_image",
         }}
       />
       <Layout bio={bio}>
