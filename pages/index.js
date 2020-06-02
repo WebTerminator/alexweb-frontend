@@ -17,7 +17,7 @@ const Home = (props) => {
           title: "Home page of AlexWeb LTD",
           type: "webiste",
           description:
-            "This is the company website where the user will discover AlexWeb latest work and news",
+            "AlexWeb company's website showcasing the latest work and news",
           images: [
             {
               url:

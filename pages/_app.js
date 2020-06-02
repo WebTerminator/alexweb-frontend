@@ -19,6 +19,22 @@ const App = ({ Component, pageProps, bio }) => {
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              <!-- Global site tag (gtag.js) - Google Analytics -->
+              <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27666071-1"></script>
+              <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'UA-27666071-1');
+              </script>
+
+              `,
+          }}
+        />
       </Head>
       <Component {...props} />
     </>
