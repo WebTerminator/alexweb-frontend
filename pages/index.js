@@ -14,7 +14,8 @@ const Home = (props) => {
     <>
       <NextSeo
         openGraph={{
-          title: "Home page",
+          title: "Home page of AlexWeb LTD",
+          type: "webiste",
           description:
             "This is the company website where the user will discover AlexWeb latest work and news",
           images: [
@@ -26,6 +27,11 @@ const Home = (props) => {
               alt: "AlexWeb LTD logo",
             },
           ],
+        }}
+        twitter={{
+          title: "Home page of AlexWeb LTD",
+          url:
+            "https://res.cloudinary.com/ltbzulwym/image/upload/v1591108794/profile_picture_cfc2454d7d.png",
         }}
       />
       <Layout bio={bio}>
