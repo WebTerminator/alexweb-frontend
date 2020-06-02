@@ -32,6 +32,7 @@ const Home = (props) => {
           title: "Home page of AlexWeb LTD",
           url:
             "https://res.cloudinary.com/ltbzulwym/image/upload/v1591108794/profile_picture_cfc2454d7d.png",
+          handle: "@AsWeb85",
         }}
       />
       <Layout bio={bio}>
