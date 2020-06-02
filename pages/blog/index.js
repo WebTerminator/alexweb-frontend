@@ -18,7 +18,9 @@ const Blog = (props) => {
         title="AlexWeb LTD - blog"
         description="This is the blog of AlexWeb LTD"
         openGraph={{
-          title: "AlexWeb LTD website",
+          title: "Home page",
+          description:
+            "This is the company website where the user will discover AlexWeb latest work and news",
         }}
       />
       <Layout bio={props.bio}>
