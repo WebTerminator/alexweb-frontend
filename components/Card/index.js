@@ -10,6 +10,7 @@ import {
   Title,
   Wrapper,
 } from "./style";
+
 import { formatDate } from "../../util/dateFormat";
 
 const Card = ({ data }) => {
