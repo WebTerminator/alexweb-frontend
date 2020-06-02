@@ -13,8 +13,9 @@ const Main = (props) => {
   return (
     <>
       <Title>
-        This is a snapshot of my last 2 years working as a freelancer. For a
-        more complete working experience please visit my profile on
+        This is a snapshot of my last 2 years working as a freelance web
+        developer. For a more complete working experience please visit my
+        profile on
         <a href="https://www.linkedin.com/in/as-web/" target="_blank">
           {" "}
           LinkedIn
