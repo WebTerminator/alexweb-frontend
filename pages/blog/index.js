@@ -17,11 +17,6 @@ const Blog = (props) => {
       <NextSeo
         title="AlexWeb LTD - blog"
         description="This is the blog of AlexWeb LTD"
-        openGraph={{
-          title: "Home page",
-          description:
-            "This is the company website where the user will discover AlexWeb latest work and news",
-        }}
       />
       <Layout bio={props.bio}>
         <Title>
