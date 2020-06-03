@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import { mediaQ } from '../Style'
+import styled from "styled-components";
+import { mediaQ } from "../Style";
 
 export const Navigation = styled.nav`
   @media ${mediaQ.maxMedium} {
     text-align: center;
   }
-`
+`;
 
 export const NavLink = styled.a`
   position: relative;
@@ -19,6 +19,8 @@ export const NavLink = styled.a`
   margin-bottom: 5px;
 
   &.active {
+    font-size: 1.6rem;
+
     @media ${mediaQ.maxMedium} {
       font-size: 2rem;
 
@@ -41,4 +43,4 @@ export const NavLink = styled.a`
       transform: rotate(270deg);
     }
   }
-`
+`;

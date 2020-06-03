@@ -1,10 +1,10 @@
 import { getData } from "../utils";
 
-const development = process.env.NODE_ENV !== "production";
+export const isDevelopment = process.env.NODE_ENV !== "production";
 const DEV_URL = process.env.API_URL;
 const PROD_URL = process.env.API_URL_PROD;
-export const BASE_API_URL = development ? DEV_URL : PROD_URL;
-export const FE_URL = development
+export const BASE_API_URL = isDevelopment ? DEV_URL : PROD_URL;
+export const FE_URL = isDevelopment
   ? `http://localhost:3000/`
   : `https://alexweb-frontend.now.sh/`;
 

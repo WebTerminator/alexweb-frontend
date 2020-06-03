@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import { getBio } from "../api";
+import { getBio, isDevelopment } from "../api";
 import "../assets/css/style.css";
 import { useAnalytics } from "../util/ga";
 
@@ -10,10 +10,13 @@ const App = ({ Component, pageProps, bio }) => {
     ...bio,
     pageProps,
   };
-  useEffect(() => {
-    init("UA-27666071-1");
-    trackPageViewed();
-  }, []);
+
+  if (!isDevelopment) {
+    useEffect(() => {
+      init("UA-27666071-1");
+      trackPageViewed();
+    }, []);
+  }
 
   return (
     <>
