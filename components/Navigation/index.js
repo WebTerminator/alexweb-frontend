@@ -17,6 +17,11 @@ const Nav = () => {
           blog
         </NavLink>
       </Link>
+      <Link href="/projects">
+        <NavLink className={route.startsWith("/projects") ? "active" : ""}>
+          projects
+        </NavLink>
+      </Link>
     </Navigation>
   );
 };

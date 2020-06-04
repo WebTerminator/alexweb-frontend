@@ -1,0 +1,15 @@
+import React from "react";
+import { uploads } from "../../api";
+import { LinkToCv } from "./style";
+
+const Cv = ({ sideButton }) => (
+  <LinkToCv
+    className={sideButton && "side-button"}
+    href={uploads.cv}
+    target="_blank"
+  >
+    Download resume
+  </LinkToCv>
+);
+
+export default Cv;

@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   cursor: pointer;
+  width: 100%;
+
+  @media only screen and (min-width: 1200px) {
+    max-width: 70%;
+  }
 `;
 
 export const Img = styled.img`
@@ -16,7 +21,11 @@ export const ImgWrapper = styled.div`
 
 export const TextWrapper = styled.div`
   flex: 6;
-  padding: 0 40px 40px;
+  padding: 0 20px 20px;
+
+  @media only screen and (min-width: 800px) {
+    padding: 0 40px 40px;
+  }
 `;
 
 export const Title = styled.h3`

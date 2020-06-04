@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { mediaQ } from "../Style";
 
 export const Navigation = styled.nav`
+  margin-bottom: 3.5rem;
+
   @media ${mediaQ.maxMedium} {
     text-align: center;
   }
@@ -16,10 +18,10 @@ export const NavLink = styled.a`
   font-size: 1.4rem;
   font-weight: 500;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
   &.active {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 
     @media ${mediaQ.maxMedium} {
       font-size: 2rem;

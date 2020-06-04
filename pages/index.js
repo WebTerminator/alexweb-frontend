@@ -5,10 +5,7 @@ import { getProjects } from "../api";
 import { NextSeo } from "next-seo";
 
 const Home = (props) => {
-  const {
-    bio,
-    pageProps: { projects },
-  } = props;
+  const { bio } = props;
 
   return (
     <>
@@ -34,16 +31,11 @@ const Home = (props) => {
           site: "@AsWeb85",
         }}
       />
-      <Layout bio={bio}>
-        <Main projects={projects} />
+      <Layout page="home" bio={bio}>
+        <Main />
       </Layout>
     </>
   );
-};
-
-Home.getInitialProps = async () => {
-  const projects = await getProjects();
-  return { projects };
 };
 
 export default Home;

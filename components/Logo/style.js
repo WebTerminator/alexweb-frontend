@@ -1,8 +1,10 @@
-import styled from 'styled-components'
-import { mediaQ } from '../Style'
+import styled from "styled-components";
+import { mediaQ } from "../Style";
 
 export const Wrapper = styled.div`
-  @media ${mediaQ.medium} { 
+  margin-bottom: 8rem;
+
+  @media ${mediaQ.medium} {
     background-color: transparent;
     position: relative;
     top: -4px;
@@ -12,12 +14,12 @@ export const Wrapper = styled.div`
       width: 80%;
     }
   }
-`
+`;
 
 export const LogoImg = styled.img`
   @media ${mediaQ.maxMedium} {
     display: none;
   }
   cursor: pointer;
-  width: 80%;
-`
+  width: 15rem;
+`;

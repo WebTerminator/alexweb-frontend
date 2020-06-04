@@ -1,30 +1,22 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  padding: 20px;
-  margin-bottom: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  a {
-    color: #E81114;
-    text-decoration: none;
+  h1 {
+    text-align: center;
   }
+`;
 
-  h2 {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #000;
+export const ProfileImg = styled.div`
+  max-width: 15rem;
 
-    a {
-      color: #000;
-      transition: color .3s ease-in;
-      text-decoration: none;
-
-      &: hover {
-        color: #E81114;
-      }
-    }
+  img {
+    width: 100%;
+    border-radius: 50%;
   }
-
-  p {
-    margin-bottom: 20px;
-  }
-`
+`;

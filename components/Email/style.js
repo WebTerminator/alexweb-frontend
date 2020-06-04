@@ -9,7 +9,7 @@ export const TriangleCSS = styled.div`
   float: left;
   transform: rotate(135deg);
   position: fixed;
-  bottom: -120px;
+  bottom: -100px;
   right: -120px;
 `;
 

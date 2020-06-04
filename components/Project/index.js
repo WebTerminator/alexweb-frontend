@@ -1,10 +1,11 @@
-import React from 'react'
-import ReactMarkdown from 'react-markdown'
-import { ProjectWrapper } from './style'
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import { ProjectWrapper } from "./style";
 
-const Project = ({ source: { details } }) =>
+const Project = ({ source }) => (
   <ProjectWrapper>
-    <ReactMarkdown linkTarget="_blank" source={details} />
+    <ReactMarkdown linkTarget="_blank" source={source} />
   </ProjectWrapper>
+);
 
-export default Project
+export default Project;
