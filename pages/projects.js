@@ -9,6 +9,7 @@ import { objectToArray } from "../utils";
 const Projects = ({ bio, pageProps }) => {
   const { projects } = pageProps;
   const listOfProjects = objectToArray(projects);
+  const sortedProjects = listOfProjects.sort((a, b) => a.sortable - b.sortable);
   return (
     <>
       <NextSeo
@@ -38,7 +39,7 @@ const Projects = ({ bio, pageProps }) => {
       />
       <Layout page="projects" bio={bio}>
         <Title>Some of the projects I worked on in the last 2 years</Title>
-        {listOfProjects.map((data, i) => (
+        {sortedProjects.map((data, i) => (
           <Project key={`id-${i}`} source={data.description} />
         ))}
       </Layout>
