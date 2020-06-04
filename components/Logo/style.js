@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { mediaQ } from "../Style";
 
 export const Wrapper = styled.div`
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 
   @media ${mediaQ.medium} {
     background-color: transparent;
