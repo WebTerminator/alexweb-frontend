@@ -8,7 +8,7 @@ const Cv = ({ sideButton }) => (
     href={uploads.cv}
     target="_blank"
   >
-    Download resume
+    Download cv
   </LinkToCv>
 );
 
