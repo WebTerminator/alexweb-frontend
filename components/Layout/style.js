@@ -17,6 +17,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Main = styled.section`
+  height: 100%;
   padding: 100px 20px 20px;
 
   @media ${mediaQ.medium} {
