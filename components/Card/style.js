@@ -16,7 +16,7 @@ export const Img = styled.img`
 
 export const ImgWrapper = styled.div`
   flex: 2;
-  max-width: 200px;
+  max-width: 250px;
 `;
 
 export const TextWrapper = styled.div`
