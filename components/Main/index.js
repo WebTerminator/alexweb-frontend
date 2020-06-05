@@ -3,12 +3,13 @@ import { Title } from "../Style";
 import { ProfileImg, Wrapper } from "./style";
 import SideBarShare from "../SideBarShare";
 import Cv from "../Cv";
+import { BASE_API_URL } from "../../api";
 
-const Main = () => {
+const Main = ({ profile }) => {
   return (
     <Wrapper>
       <ProfileImg>
-        <img src="https://res.cloudinary.com/ltbzulwym/image/upload/v1591117648/me_8b8bb6806c.jpg" />
+        <img src={`${BASE_API_URL}${profile.url}`} />
       </ProfileImg>
       <Title>
         <span>Alessandro Santese is a Sutton based </span>

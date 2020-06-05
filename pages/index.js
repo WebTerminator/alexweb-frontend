@@ -5,8 +5,7 @@ import { getProjects } from "../api";
 import { NextSeo } from "next-seo";
 
 const Home = (props) => {
-  const { bio } = props;
-
+  const { bio, profile } = props;
   return (
     <>
       <NextSeo
@@ -32,7 +31,7 @@ const Home = (props) => {
         }}
       />
       <Layout page="home" bio={bio}>
-        <Main />
+        <Main profile={profile} />
       </Layout>
     </>
   );
