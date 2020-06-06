@@ -9,7 +9,7 @@ export const Wrapper = styled.aside`
     position: fixed;
     width: 100%;
     transition: all 0.5s linear;
-    top: 100px;
+    top: 7rem;
     height: 100%;
     padding: 0 20px 40px;
     postion: relative;

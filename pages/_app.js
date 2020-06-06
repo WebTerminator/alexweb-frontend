@@ -31,9 +31,9 @@ const App = ({ Component, pageProps, bio, router }) => {
         />
         />
       </Head>
-      <AnimatePresence exitBeforeEnter>
-        <Component {...props} key={router.route} />
-      </AnimatePresence>
+      {/* <AnimatePresence exitBeforeEnter> */}
+      <Component {...props} key={router.route} />
+      {/* </AnimatePresence> */}
     </>
   );
 };
