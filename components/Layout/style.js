@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mediaQ } from "../Style";
+import { motion } from "framer-motion";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -16,7 +17,7 @@ export const Wrapper = styled.section`
   }
 `;
 
-export const Main = styled.section`
+export const Main = styled(motion.section)`
   height: 100%;
   padding: 100px 20px 20px;
 

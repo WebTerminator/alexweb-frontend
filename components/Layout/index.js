@@ -16,14 +16,13 @@ const Layout = ({ children, bio, page }) => {
       {page === "home" ? (
         <Main>{children}</Main>
       ) : (
-        <motion.div
-          style={{ height: "100%" }}
+        <Main
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          <Main>{children}</Main>
-        </motion.div>
+          {children}
+        </Main>
       )}
       <Email />
     </Wrapper>
