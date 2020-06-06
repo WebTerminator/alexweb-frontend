@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Main from "../components/Main";
-import { getProjects } from "../api";
 import { NextSeo } from "next-seo";
+import { motion } from "framer-motion";
 
 const Home = (props) => {
   const { bio, profile } = props;

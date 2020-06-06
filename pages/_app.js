@@ -3,8 +3,9 @@ import Head from "next/head";
 import { getBio, isDevelopment } from "../api";
 import "../assets/css/style.css";
 import { useAnalytics } from "../util/ga";
+import { AnimatePresence } from "framer-motion";
 
-const App = ({ Component, pageProps, bio }) => {
+const App = ({ Component, pageProps, bio, router }) => {
   const { init, trackPageViewed } = useAnalytics();
   const props = {
     ...bio,
@@ -30,12 +31,14 @@ const App = ({ Component, pageProps, bio }) => {
         />
         />
       </Head>
-      <Component {...props} />
+      <AnimatePresence exitBeforeEnter>
+        <Component {...props} key={router.route} />
+      </AnimatePresence>
     </>
   );
 };
 
-App.getInitialProps = async ({ Component, ctx }) => {
+App.getInitialProps = async ({ Component, ctx, router }) => {
   let pageProps;
 
   if (Component.getInitialProps) {

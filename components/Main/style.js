@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const ProfileImg = styled.div`
+export const ProfileImg = styled(motion.div)`
   max-width: 15rem;
 
   img {
@@ -20,3 +21,5 @@ export const ProfileImg = styled.div`
     border-radius: 50%;
   }
 `;
+
+export const MotionDiv = styled(motion.div)``;
