@@ -14,7 +14,7 @@ export const Wrapper = styled(motion.div)`
 `;
 
 export const ProfileImg = styled(motion.div)`
-  max-width: 15rem;
+  max-width: 13rem;
 
   img {
     width: 100%;

@@ -8,7 +8,11 @@ import Cv from "../Cv";
 const Aside = (props) => {
   const { bio, isOpen, page } = props;
   return (
-    <Wrapper isOpen={isOpen}>
+    <Wrapper
+      initial={{ left: "-100%" }}
+      animate={{ left: isOpen ? 0 : "-100%" }}
+      exit={{ left: "-100%" }}
+    >
       <Logo />
       <Nav />
       {page !== "home" && (

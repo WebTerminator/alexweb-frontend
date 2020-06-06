@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import { mediaQ } from "../Style";
+import { motion } from "framer-motion";
 
-export const Wrapper = styled.aside`
+export const Wrapper = styled(motion.aside)`
   background-color: black;
 
   @media ${mediaQ.maxMedium} {
-    left: ${(p) => (p.isOpen ? `0` : `-100%`)};
     position: fixed;
     width: 100%;
     transition: all 0.5s linear;
-    top: 100px;
+    top: 7rem;
     height: 100%;
     padding: 0 20px 40px;
     postion: relative;
