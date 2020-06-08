@@ -1,6 +1,7 @@
 import React from "react";
 import { EmailIcon, LinkedinIcon, TwitterIcon } from "react-share";
 import { LinkShare, Wrapper } from "./style";
+import Image from "../Img";
 
 const SideBarShare = () => (
   <Wrapper>
@@ -14,7 +15,7 @@ const SideBarShare = () => (
       <EmailIcon size={32} round={true} />
     </LinkShare>
     <LinkShare href="https://github.com/WebTerminator" target="_blank">
-      <img alt="Github account" width={32} src="/gh.svg" />
+      <Image alt="Github account" width="32px" url="/gh.svg" />
     </LinkShare>
   </Wrapper>
 );

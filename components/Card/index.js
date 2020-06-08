@@ -3,20 +3,20 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import {
   ArtcilePreview,
-  Img,
   ImgWrapper,
   PublishedDate,
   TextWrapper,
   Title,
   Wrapper,
 } from "./style";
+import Image from "../Img";
 
 import { formatDate } from "../../utils";
 
 const Card = ({ data }) => {
   const {
     intro,
-    preview: { url },
+    preview: { alternativeText, url },
     published,
     slug,
     title,
@@ -26,7 +26,7 @@ const Card = ({ data }) => {
     <Link href="/blog/[slug]" as={`/blog/${slug}`}>
       <Wrapper>
         <ImgWrapper>
-          <Img src={url} />
+          <Image url={url} alt={alternativeText} />
         </ImgWrapper>
         <TextWrapper>
           <Title>{title}</Title>

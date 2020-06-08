@@ -5,6 +5,7 @@ import SideBarShare from "../SideBarShare";
 import Cv from "../Cv";
 import { BASE_API_URL, isDevelopment } from "../../api";
 import { motion } from "framer-motion";
+import Image from "../Img";
 
 const stagger = {
   animate: {
@@ -45,7 +46,7 @@ const Main = ({ profile }) => {
     >
       <Wrapper variants={stagger}>
         <ProfileImg variants={fadeInUp}>
-          <img alt={alternativeText} src={imgUrl} />
+          <Image alt={alternativeText} url={imgUrl} />
         </ProfileImg>
 
         <MotionDiv variants={fadeInUp}>

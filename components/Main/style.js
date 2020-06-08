@@ -17,7 +17,6 @@ export const ProfileImg = styled(motion.div)`
   max-width: 13rem;
 
   img {
-    width: 100%;
     border-radius: 50%;
   }
 `;
