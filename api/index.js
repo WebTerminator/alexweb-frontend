@@ -6,7 +6,7 @@ const PROD_URL = process.env.API_URL_PROD;
 export const BASE_API_URL = isDevelopment ? DEV_URL : PROD_URL;
 export const FE_URL = isDevelopment
   ? `http://localhost:3000/`
-  : `https://alexweb-frontend.now.sh/`;
+  : `https://www.alex-web.co.uk/`;
 
 const endpoints = {
   bio: `${BASE_API_URL}/bio`,
