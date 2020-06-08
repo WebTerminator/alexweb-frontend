@@ -39,7 +39,8 @@ const fadeInUp = {
 };
 
 const Main = ({ profile }) => {
-  const url = isDevelopment ? `${BASE_API_URL}${profile.url}` : profile.url;
+  const { alternativeText, url } = profile;
+  const url = isDevelopment ? `${BASE_API_URL}${url}` : url;
 
   return (
     <motion.div
@@ -50,7 +51,7 @@ const Main = ({ profile }) => {
     >
       <Wrapper variants={stagger}>
         <ProfileImg variants={fadeInUp}>
-          <img src={url} />
+          <img alt={alternativeText} src={url} />
         </ProfileImg>
 
         <MotionDiv variants={fadeInUp}>
