@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   width: 100%;
   flex-direction: column;
   border-bottom: 2px solid #e81114;
-  padding-bottom: 20px;
   margin-bottom: 30px;
 
   @media ${mediaQ.medium} {
