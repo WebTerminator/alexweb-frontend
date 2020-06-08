@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { colors } from "../Style";
 
 export const TriangleCSS = styled.div`
   width: 0px;
   height: 0px;
   border-style: inset;
   border-width: 0 100px 173.2px 100px;
-  border-color: transparent transparent #e81114 transparent;
+  border-color: transparent transparent ${colors.brandPrimary} transparent;
   float: left;
   transform: rotate(135deg);
   position: fixed;

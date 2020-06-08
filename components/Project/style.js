@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { colors, mediaQ } from "../Style";
 
 export const ProjectWrapper = styled.div`
   margin-bottom: 50px;
   width: 100%;
 
-  @media only screen and (min-width: 800px) {
+  @media ${mediaQ.medium} {
     width: 70%;
   }
 
@@ -15,10 +16,10 @@ export const ProjectWrapper = styled.div`
     margin-bottom: 10px;
     width: 70%;
 
-    border-bottom: 4px solid #e81114;
+    border-bottom: 4px solid ${colors.brandPrimary};
 
     a {
-      color: #e81114;
+      color: ${colors.brandPrimary};
       text-decoration: none;
       transition: color 0.2s linear;
     }
@@ -26,15 +27,13 @@ export const ProjectWrapper = styled.div`
 
   p {
     margin-bottom: 20px;
-    line-height: 1.5rem;
-    font-size: 1.1rem;
 
     &:last-child {
       font-weight: 500;
     }
 
     a {
-      color: #e81114;
+      color: ${colors.brandPrimary};
       text-decoration: none;
     }
   }

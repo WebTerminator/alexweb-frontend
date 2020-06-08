@@ -12,13 +12,15 @@ export const Wrapper = styled.header`
   justify-content: space-between;
   padding: 20px;
 
-  img {
-    &:first-child {
-      max-width: 80px;
-    }
-  }
-
   @media ${mediaQ.medium} {
     display: none;
+  }
+`;
+
+export const LogoMobileWrapper = styled.div`
+  max-width: 4.1rem;
+
+  img {
+    width: 100%;
   }
 `;
