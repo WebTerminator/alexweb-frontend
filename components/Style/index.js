@@ -8,7 +8,7 @@ export const mediaQ = {
 };
 
 export const Title = styled.h1`
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   font-weight: 800;
 
   a {

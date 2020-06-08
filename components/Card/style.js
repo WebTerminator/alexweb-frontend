@@ -6,9 +6,15 @@ export const Wrapper = styled.div`
   cursor: pointer;
   width: 100%;
   flex-direction: column;
+  border-bottom: 2px solid #e81114;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 
   @media ${mediaQ.medium} {
     flex-direction: row;
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   @media ${mediaQ.large} {
@@ -22,12 +28,7 @@ export const Img = styled.img`
 
 export const ImgWrapper = styled.div`
   flex: 2;
-  max-width: 300px;
-  margin: 0 auto;
-
-  @media ${mediaQ.medium} {
-    margin: 0;
-  }
+  max-width: 250px;
 `;
 
 export const TextWrapper = styled.div`
@@ -46,6 +47,7 @@ export const Title = styled.h3`
 
 export const PublishedDate = styled.p`
   font-size: 0.9rem;
+  margin-bottom: 20px;
 
   span {
     &:nth-child(2) {

@@ -30,11 +30,11 @@ const Card = ({ data }) => {
         </ImgWrapper>
         <TextWrapper>
           <Title>{title}</Title>
-          <ArtcilePreview>{intro}</ArtcilePreview>
           <PublishedDate>
             <span>Published on:</span>
             <span>{formatDate(published)}</span>
           </PublishedDate>
+          <ArtcilePreview>{intro}</ArtcilePreview>
         </TextWrapper>
       </Wrapper>
     </Link>
