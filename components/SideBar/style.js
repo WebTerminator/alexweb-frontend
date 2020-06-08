@@ -26,8 +26,6 @@ export const Wrapper = styled(motion.aside)`
 export const BioText = styled.p`
    {
     color: #fff;
-    font-size: 1rem;
-    line-height: 1.4rem;
     margin-bottom: 20px;
   }
 `;

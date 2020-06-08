@@ -24,7 +24,7 @@ export const NavLink = styled.a`
     font-size: 1.8rem;
 
     @media ${mediaQ.maxMedium} {
-      font-size: 2rem;
+      font-size: 2.2rem;
 
       &:before {
         display: none;

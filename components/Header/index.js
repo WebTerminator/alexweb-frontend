@@ -1,26 +1,31 @@
-import React, { useState } from 'react'
-import MenuSVG from '../Icons/menu'
-import MenuCloseSVG from '../Icons/menu-close'
-import LogoMobileSVG from '../Icons/logoMobile'
-import { Wrapper } from './style'
+import React, { useState } from "react";
+import MenuSVG from "../Icons/menu";
+import MenuCloseSVG from "../Icons/menu-close";
+import LogoMobileSVG from "../Icons/logoMobile";
+import { LogoMobileWrapper, Wrapper } from "./style";
+import Link from "next/link";
 
 const Header = ({ hadnleIsSideOpen }) => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(true);
   const hanldeMenuToggle = () => {
-    setIsOpen(!isOpen)
-    hadnleIsSideOpen()
-  }
+    setIsOpen(!isOpen);
+    hadnleIsSideOpen();
+  };
 
   return (
     <Wrapper>
-      <LogoMobileSVG />
-      {
-        isOpen
-          ? <MenuSVG onClick={hanldeMenuToggle} />
-          : <MenuCloseSVG onClick={hanldeMenuToggle} />
-      }
+      <Link href="/">
+        <LogoMobileWrapper>
+          <LogoMobileSVG />
+        </LogoMobileWrapper>
+      </Link>
+      {isOpen ? (
+        <MenuSVG onClick={hanldeMenuToggle} />
+      ) : (
+        <MenuCloseSVG onClick={hanldeMenuToggle} />
+      )}
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,6 +1,13 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import { mediaQ } from "../Style";
 
 export const Wrapper = styled.div`
+  width: 100%;
+
+  @media ${mediaQ.large} {
+    width: 70%;
+  }
+
   h2 {
     margin: 50px 0 10px 0;
     font-weight: 800;
@@ -8,18 +15,20 @@ export const Wrapper = styled.div`
 
   h3 {
     font-weight: 500;
+    margin: 20px 0 8px 0;
   }
 
   p {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
+
+    @media ${mediaQ.maxLarge} {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+    }
 
     &:last-of-type {
       margin-bottom: 50px;
     }
-  }
-
-  li, p {
-    line-height: 1.6rem;
   }
 
   img {
@@ -33,7 +42,7 @@ export const Wrapper = styled.div`
   }
 
   a {
-    color: #E81114;
+    color: #e81114;
     text-decoration: none;
   }
-`
+`;

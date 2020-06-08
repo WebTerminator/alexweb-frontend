@@ -1,11 +1,17 @@
 import styled from "styled-components";
+import { mediaQ } from "../Style";
 
 export const Wrapper = styled.div`
   display: flex;
   cursor: pointer;
   width: 100%;
+  flex-direction: column;
 
-  @media only screen and (min-width: 1200px) {
+  @media ${mediaQ.medium} {
+    flex-direction: row;
+  }
+
+  @media ${mediaQ.large} {
     max-width: 70%;
   }
 `;
@@ -16,14 +22,19 @@ export const Img = styled.img`
 
 export const ImgWrapper = styled.div`
   flex: 2;
-  max-width: 250px;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media ${mediaQ.medium} {
+    margin: 0;
+  }
 `;
 
 export const TextWrapper = styled.div`
   flex: 6;
-  padding: 0 20px 20px;
+  padding: 20px 0 0 0;
 
-  @media only screen and (min-width: 800px) {
+  @media ${mediaQ.medium} {
     padding: 0 40px 40px;
   }
 `;

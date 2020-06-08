@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { mediaQ } from "../Style";
 
 export const ProjectWrapper = styled.div`
   margin-bottom: 50px;
   width: 100%;
 
-  @media only screen and (min-width: 800px) {
+  @media ${mediaQ.medium} {
     width: 70%;
   }
 
@@ -26,8 +27,6 @@ export const ProjectWrapper = styled.div`
 
   p {
     margin-bottom: 20px;
-    line-height: 1.5rem;
-    font-size: 1.1rem;
 
     &:last-child {
       font-weight: 500;

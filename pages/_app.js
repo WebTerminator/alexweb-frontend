@@ -26,9 +26,8 @@ const App = ({ Component, pageProps, bio, router }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="/favicon.png" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&family=Poppins:wght@300&display=swap"
           rel="stylesheet"
-        />
         />
       </Head>
       {/* <AnimatePresence exitBeforeEnter> */}
