@@ -40,7 +40,7 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h2`
   margin-bottom: 10px;
   font-weight: 800;
 `;
