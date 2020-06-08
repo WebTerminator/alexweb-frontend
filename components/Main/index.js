@@ -14,14 +14,8 @@ const stagger = {
   },
 };
 
-// Our custom easing
 let easing = [0.6, -0.05, 0.01, 0.99];
 
-// animate: defines animation
-// initial: defines initial state of animation or stating point.
-// exit: defines animation when component exits
-
-// Custom variant
 const fadeInUp = {
   initial: {
     y: 60,
@@ -40,7 +34,7 @@ const fadeInUp = {
 
 const Main = ({ profile }) => {
   const { alternativeText, url } = profile;
-  const url = isDevelopment ? `${BASE_API_URL}${url}` : url;
+  const imgUrl = isDevelopment ? `${BASE_API_URL}${url}` : url;
 
   return (
     <motion.div
@@ -51,7 +45,7 @@ const Main = ({ profile }) => {
     >
       <Wrapper variants={stagger}>
         <ProfileImg variants={fadeInUp}>
-          <img alt={alternativeText} src={url} />
+          <img alt={alternativeText} src={imgUrl} />
         </ProfileImg>
 
         <MotionDiv variants={fadeInUp}>
