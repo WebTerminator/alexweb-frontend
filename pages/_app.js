@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import { getBio, isDevelopment } from "../api";
 import "../assets/css/style.css";
-import { useAnalytics } from "../util/ga";
-import { AnimatePresence } from "framer-motion";
+import { useAnalytics } from "../utils";
 
 const App = ({ Component, pageProps, bio, router }) => {
   const { init, trackPageViewed } = useAnalytics();
@@ -30,9 +29,7 @@ const App = ({ Component, pageProps, bio, router }) => {
           rel="stylesheet"
         />
       </Head>
-      {/* <AnimatePresence exitBeforeEnter> */}
       <Component {...props} key={router.route} />
-      {/* </AnimatePresence> */}
     </>
   );
 };

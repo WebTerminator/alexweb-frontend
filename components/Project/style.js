@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQ } from "../Style";
+import { colors, mediaQ } from "../Style";
 
 export const ProjectWrapper = styled.div`
   margin-bottom: 50px;
@@ -16,10 +16,10 @@ export const ProjectWrapper = styled.div`
     margin-bottom: 10px;
     width: 70%;
 
-    border-bottom: 4px solid #e81114;
+    border-bottom: 4px solid ${colors.brandPrimary};
 
     a {
-      color: #e81114;
+      color: ${colors.brandPrimary};
       text-decoration: none;
       transition: color 0.2s linear;
     }
@@ -33,7 +33,7 @@ export const ProjectWrapper = styled.div`
     }
 
     a {
-      color: #e81114;
+      color: ${colors.brandPrimary};
       text-decoration: none;
     }
   }

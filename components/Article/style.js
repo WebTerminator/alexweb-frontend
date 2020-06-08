@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQ } from "../Style";
+import { colors, mediaQ } from "../Style";
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
   }
 
   a {
-    color: #e81114;
+    color: ${colors.brandPrimary};
     text-decoration: none;
   }
 `;

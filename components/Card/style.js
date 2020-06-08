@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { mediaQ } from "../Style";
+import { colors, mediaQ } from "../Style";
 
 export const Wrapper = styled.div`
   display: flex;
   cursor: pointer;
   width: 100%;
   flex-direction: column;
-  border-bottom: 2px solid #e81114;
+  border-bottom: 2px solid ${colors.brandPrimary};
   margin-bottom: 30px;
 
   @media ${mediaQ.medium} {

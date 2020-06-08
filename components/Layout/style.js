@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQ } from "../Style";
+import { colors, mediaQ } from "../Style";
 import { motion } from "framer-motion";
 
 export const Wrapper = styled.section`
@@ -37,7 +37,7 @@ export const TriangleCSS = styled.div`
   height: 0px;
   border-style: inset;
   border-width: 0 100px 173.2px 100px;
-  border-color: transparent transparent #e81114 transparent;
+  border-color: transparent transparent ${colors.brandPrimary} transparent;
   float: left;
   transform: rotate(135deg);
   position: fixed;

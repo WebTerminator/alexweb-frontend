@@ -11,7 +11,7 @@ import {
   Wrapper,
 } from "./style";
 
-import { formatDate } from "../../util/dateFormat";
+import { formatDate } from "../../utils";
 
 const Card = ({ data }) => {
   const {

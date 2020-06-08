@@ -7,12 +7,18 @@ export const mediaQ = {
   maxMedium: `(max-width: 799px)`,
 };
 
+const RED = "#e81114";
+
+export const colors = {
+  brandPrimary: RED,
+};
+
 export const Title = styled.h1`
   margin-bottom: 5rem;
   font-weight: 800;
 
   a {
-    color: #e81114;
+    color: ${colors.brandPrimary};
     text-decoration: none;
   }
 
