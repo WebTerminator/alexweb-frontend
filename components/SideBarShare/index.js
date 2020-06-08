@@ -14,7 +14,7 @@ const SideBarShare = () => (
       <EmailIcon size={32} round={true} />
     </LinkShare>
     <LinkShare href="https://github.com/WebTerminator" target="_blank">
-      <img width={32} src="/gh.svg" />
+      <img alt="Github account" width={32} src="/gh.svg" />
     </LinkShare>
   </Wrapper>
 );
