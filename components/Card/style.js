@@ -28,7 +28,11 @@ export const Img = styled.img`
 
 export const ImgWrapper = styled.div`
   flex: 2;
-  max-width: 250px;
+  max-width: 150px;
+
+  @media ${mediaQ.medium} {
+    max-width: 250px;
+  }
 `;
 
 export const TextWrapper = styled.div`
