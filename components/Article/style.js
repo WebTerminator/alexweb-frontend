@@ -25,10 +25,6 @@ export const Wrapper = styled.div`
       font-size: 1.4rem;
       margin-bottom: 2rem;
     }
-
-    &:last-of-type {
-      margin-bottom: 50px;
-    }
   }
 
   img {
@@ -39,6 +35,7 @@ export const Wrapper = styled.div`
 
   li {
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 
     p {
       margin-bottom: 0.5rem;
