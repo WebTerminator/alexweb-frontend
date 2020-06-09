@@ -4,7 +4,7 @@ import { colors, mediaQ } from "../Style";
 export const Wrapper = styled.div`
   width: 100%;
 
-  @media ${mediaQ.large} {
+  @media ${mediaQ.xLarge} {
     width: 70%;
   }
 
@@ -39,6 +39,10 @@ export const Wrapper = styled.div`
 
   li {
     font-size: 1.2rem;
+
+    p {
+      margin-bottom: 0.5rem;
+    }
   }
 
   a {

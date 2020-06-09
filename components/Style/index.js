@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const mediaQ = {
+  xLarge: `(min-width: 1800px)`,
   maxLarge: `(max-width: 1119px)`,
   large: `(min-width: 1200px)`,
   medium: `(min-width: 800px)`,
