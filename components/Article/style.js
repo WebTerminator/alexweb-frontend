@@ -37,8 +37,8 @@ export const Wrapper = styled.div`
     padding: 0 20px 10px 0;
   }
 
-  ul {
-    padding: 0 0 0 20px;
+  li {
+    font-size: 1.2rem;
   }
 
   a {
