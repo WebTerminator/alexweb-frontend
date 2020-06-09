@@ -24,6 +24,12 @@ export const Title = styled.h1`
   }
 
   span {
+    width: 100%;
     display: block;
+
+    @media ${mediaQ.xLarge} {
+      margin: 4rem auto;
+      width: 70%;
+    }
   }
 `;

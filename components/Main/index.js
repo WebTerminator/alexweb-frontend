@@ -51,8 +51,10 @@ const Main = ({ profile }) => {
 
         <MotionDiv variants={fadeInUp}>
           <Title>
-            <span>Alessandro Santese is a Sutton based </span>
-            freelance web developer with 10 years of experience
+            <span>
+              Alessandro Santese is a freelance web developer with 10 years of
+              experience
+            </span>
           </Title>
         </MotionDiv>
 
