@@ -15,8 +15,28 @@ const BlogArticle = (props) => {
   return (
     <>
       <NextSeo
-        title={`AlexWeb LTD - ${currentArticle.title}`}
-        description={`This is the article about ${currentArticle.title}`}
+        title={`AlexWeb - ${currentArticle.title}`}
+        description="This article is a reflection on my journey as a front-end developer so far."
+        openGraph={{
+          title: `${currentArticle.title}`,
+          type: "webiste",
+          description:
+            "This article is a reflection on my journey as a front-end developer so far.",
+          images: [
+            {
+              url:
+                "https://res.cloudinary.com/ltbzulwym/image/upload/v1591101650/facebook_2c545fac50.png",
+              width: 1200,
+              height: 1200,
+              alt: "AlexWeb LTD logo",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@AsWeb85",
+          cardType: "summary",
+          site: "@AsWeb85",
+        }}
       />
       <Layout bio={bio}>
         <Article

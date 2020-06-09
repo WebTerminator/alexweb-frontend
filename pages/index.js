@@ -2,19 +2,18 @@ import React from "react";
 import Layout from "../components/Layout";
 import Main from "../components/Main";
 import { NextSeo } from "next-seo";
-import { motion } from "framer-motion";
 
 const Home = (props) => {
   const { bio, profile } = props;
   return (
     <>
       <NextSeo
-        description="Freelance web developer with 10 years of experience"
+        description="Alessandro Santese is a freelance web developer with 10 years of experience"
         openGraph={{
           title: "Home page of AlexWeb LTD",
           type: "webiste",
           description:
-            "AlexWeb company's website showcasing the latest work and news",
+            "Alessandro Santese is a freelance web developer with 10 years of experience",
           images: [
             {
               url:

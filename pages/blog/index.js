@@ -16,7 +16,26 @@ const Blog = (props) => {
     <>
       <NextSeo
         title="AlexWeb LTD - blog"
-        description="This is the blog of AlexWeb LTD"
+        description="This is the blog of Alessandro Santese"
+        openGraph={{
+          title: "Blog",
+          type: "webiste",
+          description: "Collection of articles",
+          images: [
+            {
+              url:
+                "https://res.cloudinary.com/ltbzulwym/image/upload/v1591101650/facebook_2c545fac50.png",
+              width: 1200,
+              height: 1200,
+              alt: "AlexWeb log",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@AsWeb85",
+          cardType: "summary",
+          site: "@AsWeb85",
+        }}
       />
       <Layout bio={props.bio}>
         <Title>

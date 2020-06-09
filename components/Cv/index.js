@@ -7,6 +7,7 @@ const Cv = ({ sideButton }) => (
     className={sideButton && "side-button"}
     href={uploads.cv}
     target="_blank"
+    rel="noreferrer"
   >
     Download cv
   </LinkToCv>
