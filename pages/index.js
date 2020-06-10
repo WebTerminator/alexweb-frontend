@@ -8,6 +8,7 @@ const Home = (props) => {
   return (
     <>
       <NextSeo
+        title="Alessandro Santese - freelance front end developer"
         description="Alessandro Santese is a freelance web developer with 10 years of experience"
         openGraph={{
           title: "Home page of AlexWeb LTD",
