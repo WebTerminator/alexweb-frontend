@@ -18,6 +18,10 @@ export const Wrapper = styled.div`
     margin: 20px 0 8px 0;
   }
 
+  a {
+    color: ${colors.brandPrimary};
+  }
+
   p {
     margin-bottom: 0.5rem;
 

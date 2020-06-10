@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { colors, mediaQ } from "../Style";
-import Image from "../Img";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -17,7 +16,7 @@ export const Wrapper = styled.div`
     margin-bottom: 0;
   }
 
-  @media ${mediaQ.large} {
+  @media ${mediaQ.xLarge} {
     max-width: 70%;
   }
 `;
