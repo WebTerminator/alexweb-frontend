@@ -6,10 +6,7 @@ import { getBlogArticles } from "../../api";
 import { objectToArray } from "../../utils";
 import { NextSeo } from "next-seo";
 
-const Blog = (props) => {
-  const {
-    pageProps: { articles },
-  } = props;
+const Blog = ({ articles }) => {
   const blogArticles = objectToArray(articles);
 
   return (
@@ -37,7 +34,7 @@ const Blog = (props) => {
           site: "@AsWeb85",
         }}
       />
-      <Layout bio={props.bio}>
+      <Layout>
         <Title>
           I am excited by the idea of sharing my knowledge and perhaps inspiring
           others.

@@ -19,7 +19,8 @@ export const Wrapper = styled.section`
 
 export const Main = styled(motion.section)`
   height: 100%;
-  padding: 100px 20px 20px;
+  padding: 0 3rem 2rem;
+  margin-top: 8rem;
 
   @media ${mediaQ.medium} {
     display: flex;
@@ -29,6 +30,7 @@ export const Main = styled(motion.section)`
 
     height: 100%;
     padding: 40px 50px;
+    margin: 0;
   }
 `;
 

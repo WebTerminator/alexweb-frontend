@@ -4,12 +4,12 @@ import { getBio, isDevelopment } from "../api";
 import "../assets/css/style.css";
 import { useAnalytics } from "../utils";
 
-const App = ({ Component, pageProps, bio, router }) => {
+const App = ({ Component, pageProps, router }) => {
   const { init, trackPageViewed } = useAnalytics();
-  const props = {
-    ...bio,
-    pageProps,
-  };
+  // const props = {
+  //   // ...bio,
+  //   pageProps,
+  // };
 
   if (!isDevelopment) {
     useEffect(() => {
@@ -29,21 +29,21 @@ const App = ({ Component, pageProps, bio, router }) => {
           rel="stylesheet"
         />
       </Head>
-      <Component {...props} key={router.route} />
+      <Component {...pageProps} key={router.route} />
     </>
   );
 };
 
-App.getInitialProps = async ({ Component, ctx, router }) => {
-  let pageProps;
+// App.getInitialProps = async ({ Component, ctx, router }) => {
+//   let pageProps;
 
-  if (Component.getInitialProps) {
-    pageProps = await Component.getInitialProps(ctx);
-  }
+//   if (Component.getInitialProps) {
+//     pageProps = await Component.getInitialProps(ctx);
+//   }
 
-  const bio = await getBio();
-  return { pageProps, bio };
-};
+//   const bio = await getBio();
+//   return { pageProps, bio };
+// };
 
 // Wraps all components in the tree with the data provider
 export default App;

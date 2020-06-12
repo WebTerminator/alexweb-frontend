@@ -6,8 +6,7 @@ import { getProjects } from "../api";
 import { NextSeo } from "next-seo";
 import { objectToArray } from "../utils";
 
-const Projects = ({ bio, pageProps }) => {
-  const { projects } = pageProps;
+const Projects = ({ projects }) => {
   const listOfProjects = objectToArray(projects);
   const sortedProjects = listOfProjects.sort((a, b) => a.sortable - b.sortable);
   return (
@@ -37,7 +36,7 @@ const Projects = ({ bio, pageProps }) => {
           site: "@AsWeb85",
         }}
       />
-      <Layout page="projects" bio={bio}>
+      <Layout page="projects">
         <Title>Some of the projects I worked on in the last 2 years</Title>
         {sortedProjects.map((data, i) => (
           <Project key={`id-${i}`} source={data.description} />

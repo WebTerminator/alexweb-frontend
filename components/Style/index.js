@@ -22,14 +22,44 @@ export const Title = styled.h1`
     color: ${colors.brandPrimary};
     text-decoration: none;
   }
+`;
+
+export const HomePageTitle = styled.h1`
+  margin: 1rem 0;
+
+  p {
+    width: 100%;
+    font-size: 1.3rem;
+
+    @media ${mediaQ.large} {
+      width: 65%;
+      margin: 0 auto 2rem;
+      text-align: center;
+    }
+  }
+
+  a {
+    color: ${colors.brandPrimary};
+    text-decoration: none;
+  }
 
   span {
-    width: 100%;
-    display: block;
+    &:first-child {
+      font-size: 1.3rem;
+      display: block;
+      font-weight: 500;
+    }
 
-    @media ${mediaQ.xLarge} {
-      margin: 4rem auto;
-      width: 70%;
+    &:nth-child(2) {
+      width: 100%;
+      margin: 0 auto 2rem;
+      display: block;
+      font-size: 2rem;
+
+      @media ${mediaQ.large} {
+        width: 75%;
+        font-size: 2.4rem;
+      }
     }
   }
 `;

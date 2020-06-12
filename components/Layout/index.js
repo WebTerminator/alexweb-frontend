@@ -5,14 +5,14 @@ import Header from "../Header";
 import { Main, Wrapper } from "./style";
 import { AnimatePresence } from "framer-motion";
 
-const Layout = ({ children, bio, page }) => {
+const Layout = ({ children, page }) => {
   const [isSideOpen, setIsSideOpen] = useState(false);
   const hadnleIsSideOpen = () => setIsSideOpen(!isSideOpen);
 
   return (
     <Wrapper>
       <Header hadnleIsSideOpen={hadnleIsSideOpen} />
-      <Aside page={page} bio={bio} isOpen={isSideOpen} />
+      <Aside page={page} isOpen={isSideOpen} />
       <AnimatePresence exitBeforeEnter>
         {page === "home" ? (
           <Main>{children}</Main>

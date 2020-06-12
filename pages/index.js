@@ -2,19 +2,21 @@ import React from "react";
 import Layout from "../components/Layout";
 import Main from "../components/Main";
 import { NextSeo } from "next-seo";
+import { getBio } from "../api";
 
-const Home = (props) => {
-  const { bio, profile } = props;
+const Home = ({ profile }) => {
+  const description =
+    "Alessandro Santese is a freelance web developer with several of experience";
+
   return (
     <>
       <NextSeo
         title="Alessandro Santese - freelance front end developer"
-        description="Alessandro Santese is a freelance web developer with 10 years of experience"
+        description={description}
         openGraph={{
           title: "Home page of AlexWeb LTD",
           type: "webiste",
-          description:
-            "Alessandro Santese is a freelance web developer with 10 years of experience",
+          description,
           images: [
             {
               url:
@@ -31,11 +33,17 @@ const Home = (props) => {
           site: "@AsWeb85",
         }}
       />
-      <Layout page="home" bio={bio}>
+      <Layout page="home">
         <Main profile={profile} />
       </Layout>
     </>
   );
+};
+
+Home.getInitialProps = async () => {
+  const bio = await getBio();
+  const { profile } = bio;
+  return { profile };
 };
 
 export default Home;

@@ -1,8 +1,6 @@
 import React from "react";
-import { Title } from "../Style";
-import { ProfileImg, Wrapper, MotionDiv } from "./style";
-import SideBarShare from "../SideBarShare";
-import Cv from "../Cv";
+import { HomePageTitle } from "../Style";
+import { Button, ProfileImg, Wrapper, MotionDiv } from "./style";
 import { BASE_API_URL, isDevelopment } from "../../api";
 import { motion } from "framer-motion";
 import Image from "../Img";
@@ -50,20 +48,25 @@ const Main = ({ profile }) => {
         </ProfileImg>
 
         <MotionDiv variants={fadeInUp}>
-          <Title>
+          <HomePageTitle>
+            <span>Hi it's Alessandro Santese here,</span>
             <span>
-              Alessandro Santese is a freelance web developer with 10 years of
-              experience
+              I bring the latest front end technologies to help your business
+              flourish.
             </span>
-          </Title>
+
+            <p>
+              <a href="https://reactjs.org/">React </a>,
+              <a href="https://redux.js.org/"> Redux </a> and
+              <a href="https://www.typescriptlang.org/"> TypeScript </a>
+              are the latest technologies that I use but I always keep myself up
+              to date to deliver the best solution to the problem.
+            </p>
+          </HomePageTitle>
         </MotionDiv>
 
         <MotionDiv variants={fadeInUp}>
-          <SideBarShare />
-        </MotionDiv>
-
-        <MotionDiv variants={fadeInUp}>
-          <Cv />
+          <Button href="mailto:aw@alex-web.co.uk">Let's work together</Button>
         </MotionDiv>
       </Wrapper>
     </motion.div>

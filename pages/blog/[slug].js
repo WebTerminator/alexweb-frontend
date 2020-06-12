@@ -5,12 +5,7 @@ import { getArticleBySlug } from "../../api";
 import { FE_URL } from "../../api";
 import { NextSeo } from "next-seo";
 
-const BlogArticle = (props) => {
-  const {
-    bio,
-    pageProps: { article, asPath },
-  } = props;
-
+const BlogArticle = ({ article, asPath }) => {
   const currentArticle = article[0];
   return (
     <>
@@ -38,7 +33,7 @@ const BlogArticle = (props) => {
           site: "@AsWeb85",
         }}
       />
-      <Layout bio={bio}>
+      <Layout>
         <Article
           title={currentArticle.title}
           content={currentArticle.content}
