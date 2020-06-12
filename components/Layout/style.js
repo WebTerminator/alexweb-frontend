@@ -20,7 +20,7 @@ export const Wrapper = styled.section`
 export const Main = styled(motion.section)`
   height: 100%;
   padding: 0 3rem 2rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
 
   @media ${mediaQ.medium} {
     display: flex;
