@@ -34,12 +34,12 @@ export const NavLink = styled.a`
     &:before {
       content: "";
       position: absolute;
-      right: -20px;
-      top: 0px;
+      right: -23px;
+      top: 11px;
       width: 0px;
       height: 0px;
       border-style: inset;
-      border-width: 0 12.5px 25px 12.5px;
+      border-width: 0 17.5px 30px 17.5px;
       border-color: transparent transparent #ffffff transparent;
       float: left;
       transform: rotate(270deg);
