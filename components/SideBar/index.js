@@ -6,7 +6,7 @@ import { BioText, BioWrapper, Copyright, Wrapper } from "./style";
 import Cv from "../Cv";
 
 const Aside = (props) => {
-  const { bio, isOpen, page } = props;
+  const { isOpen, page } = props;
   return (
     <Wrapper
       initial={{ left: "-100%" }}
@@ -15,13 +15,13 @@ const Aside = (props) => {
     >
       <Logo />
       <Nav />
-      {page !== "home" && (
-        <BioWrapper>
-          <BioText>{bio}</BioText>
-          <SideBarShare />
-          <Cv sideButton />
-        </BioWrapper>
-      )}
+      {/* {page !== "home" && ( */}
+      <BioWrapper>
+        {/* <BioText>{bio}</BioText> */}
+        <SideBarShare />
+        <Cv sideButton />
+      </BioWrapper>
+      {/* )} */}
       <Copyright>Copyright © 2020 AlexWeb LTD</Copyright>
     </Wrapper>
   );

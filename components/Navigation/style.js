@@ -15,13 +15,13 @@ export const NavLink = styled.a`
   color: #fff;
   text-transform: uppercase;
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 500;
   cursor: pointer;
   margin-bottom: 10px;
 
   &.active {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 
     @media ${mediaQ.maxMedium} {
       font-size: 2.2rem;
