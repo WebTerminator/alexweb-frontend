@@ -49,10 +49,10 @@ const Main = ({ profile }) => {
 
         <MotionDiv variants={fadeInUp}>
           <HomePageTitle>
-            <span>Hi it's Alessandro Santese here,</span>
+            <span>Hi it's Alessandro Santese here</span>
             <span>
               I bring the latest front end technologies to help your business
-              flourish.
+              flourish
             </span>
 
             <p>
