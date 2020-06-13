@@ -15,7 +15,7 @@ const Email = () => {
   return (
     <>
       <TriangleCSS />
-      <EmailLink onClick={handleGaTracking} href="mailto:aw@alex-web.co.uk">
+      <EmailLink onClick={handleGaTracking} href="mailto:as-web@hotmail.com">
         <EmailSVG />
       </EmailLink>
     </>

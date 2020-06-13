@@ -66,7 +66,7 @@ const Main = ({ profile }) => {
         </MotionDiv>
 
         <MotionDiv variants={fadeInUp}>
-          <Button href="mailto:aw@alex-web.co.uk">Let's work together</Button>
+          <Button href="mailto:as-web@hotmail.com">Let's work together</Button>
         </MotionDiv>
       </Wrapper>
     </motion.div>
