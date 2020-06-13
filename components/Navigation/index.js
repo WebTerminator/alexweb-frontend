@@ -22,6 +22,11 @@ const Nav = () => {
           blog
         </NavLink>
       </Link>
+      <Link href="/contact">
+        <NavLink className={route.startsWith("/contact") ? "active" : ""}>
+          contact
+        </NavLink>
+      </Link>
     </Navigation>
   );
 };
