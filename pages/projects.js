@@ -37,7 +37,7 @@ const Projects = ({ projects }) => {
         }}
       />
       <Layout page="projects">
-        <Title>Some of the projects I worked on in the last 2 years</Title>
+        <Title>Some of the projects I worked on in the last two years</Title>
         {sortedProjects.map((data, i) => (
           <Project key={`id-${i}`} source={data.description} />
         ))}

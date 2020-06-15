@@ -51,17 +51,9 @@ const Main = ({ profile }) => {
           <HomePageTitle>
             <span>Hi it's Alessandro Santese here</span>
             <span>
-              I bring the latest front end technologies to help your business
-              flourish
+              and I can help your business flourish using the latest front-end
+              technologies to deliver the best solution to the problem
             </span>
-
-            <p>
-              <a href="https://reactjs.org/">React </a>,
-              <a href="https://redux.js.org/"> Redux </a> and
-              <a href="https://www.typescriptlang.org/"> TypeScript </a>
-              are the latest technologies that I use but I always keep myself up
-              to date to deliver the best solution to the problem.
-            </p>
           </HomePageTitle>
         </MotionDiv>
 

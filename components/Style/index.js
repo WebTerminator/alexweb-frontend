@@ -57,7 +57,6 @@ export const HomePageTitle = styled.h1`
       font-size: 2rem;
 
       @media ${mediaQ.large} {
-        width: 80%;
         font-size: 2.4rem;
       }
     }
