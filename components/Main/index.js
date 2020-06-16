@@ -51,7 +51,7 @@ const Main = ({ profile }) => {
           <HomePageTitle>
             <span>Hi it's Alessandro Santese here</span>
             <span>
-              and I can help your business flourish using the latest front-end
+              I can help your business flourish using the latest front-end
               technologies to deliver the best solution to the problem
             </span>
           </HomePageTitle>
