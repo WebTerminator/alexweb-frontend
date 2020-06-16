@@ -23,21 +23,22 @@ const Card = ({ data }) => {
   } = data;
 
   return (
-    <Link href="/blog/[slug]" as={`/blog/${slug}`}>
-      <Wrapper>
-        <ImgWrapper>
-          <Image url={url} alt={alternativeText} />
-        </ImgWrapper>
-        <TextWrapper>
-          <Title>{title}</Title>
-          <PublishedDate>
-            <span>Published on:</span>
-            <span>{formatDate(published)}</span>
-          </PublishedDate>
-          <ArtcilePreview>{intro}</ArtcilePreview>
-        </TextWrapper>
-      </Wrapper>
-    </Link>
+    <Wrapper>
+      <ImgWrapper>
+        <Image url={url} alt={alternativeText} />
+      </ImgWrapper>
+      <TextWrapper>
+        <Title>{title}</Title>
+        <PublishedDate>
+          <span>Published on:</span>
+          <span>{formatDate(published)}</span>
+        </PublishedDate>
+        <ArtcilePreview>{intro}</ArtcilePreview>
+        <Link href="/blog/[slug]" as={`/blog/${slug}`}>
+          <a title={title}>Read more</a>
+        </Link>
+      </TextWrapper>
+    </Wrapper>
   );
 };
 
