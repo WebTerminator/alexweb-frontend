@@ -16,7 +16,7 @@ const endpoints = {
 };
 
 export const uploads = {
-  cv: `https://res.cloudinary.com/ltbzulwym/image/upload/v1591036268/CV_b7118848c8.pdf`,
+  cv: `https://res.cloudinary.com/ltbzulwym/image/upload/v1652203531/Alessandro_S_CV_9e1c857000.pdf`,
 };
 
 export const getBio = () => getData(endpoints.bio);
