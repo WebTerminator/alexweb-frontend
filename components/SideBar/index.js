@@ -15,14 +15,11 @@ const Aside = (props) => {
     >
       <Logo />
       <Nav />
-      {/* {page !== "home" && ( */}
       <BioWrapper>
-        {/* <BioText>{bio}</BioText> */}
         <SideBarShare />
         <Cv sideButton />
       </BioWrapper>
-      {/* )} */}
-      <Copyright>Copyright © 2020 AlexWeb LTD</Copyright>
+      <Copyright>Copyright © 2022 AlexWeb LTD</Copyright>
     </Wrapper>
   );
 };
