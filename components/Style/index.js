@@ -15,7 +15,7 @@ export const colors = {
 };
 
 export const Title = styled.h1`
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-weight: 800;
 
   a {

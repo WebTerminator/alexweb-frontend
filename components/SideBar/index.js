@@ -2,11 +2,11 @@ import React from "react";
 import Logo from "../Logo";
 import Nav from "../Navigation";
 import SideBarShare from "../SideBarShare";
-import { BioText, BioWrapper, Copyright, Wrapper } from "./style";
+import { BioWrapper, Copyright, Wrapper } from "./style";
 import Cv from "../Cv";
 
 const Aside = (props) => {
-  const { isOpen, page } = props;
+  const { isOpen, isNavVisible = true, isSocialVisible = true } = props;
   return (
     <Wrapper
       initial={{ left: "-100%" }}
@@ -14,11 +14,13 @@ const Aside = (props) => {
       exit={{ left: "-100%" }}
     >
       <Logo />
-      <Nav />
-      <BioWrapper>
-        <SideBarShare />
-        <Cv sideButton />
-      </BioWrapper>
+      {isNavVisible && <Nav />}
+      {isSocialVisible &&
+        <BioWrapper>
+          <SideBarShare />
+          <Cv sideButton />
+        </BioWrapper>
+      }
       <Copyright>Copyright © 2022 AlexWeb LTD</Copyright>
     </Wrapper>
   );
